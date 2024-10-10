@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8e96b465b5a6938486616f52c4ba516 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8e96b465b5a6938486616f52c4ba516" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8e96b465b5a6938486616f52c4ba516 = L.map(
+                "map_a8e96b465b5a6938486616f52c4ba516",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6aadbcca27bc255e149efb87a008543f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6aadbcca27bc255e149efb87a008543f.addTo(map_a8e96b465b5a6938486616f52c4ba516);
+        
+    
+            var marker_8264f26a218edf9bd9da95bdf387f279 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_a8e96b465b5a6938486616f52c4ba516);
+        
+    
+            var icon_76721509984a8a6b3102b6ca8f77b610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8264f26a218edf9bd9da95bdf387f279.setIcon(icon_76721509984a8a6b3102b6ca8f77b610);
+        
+    
+        var popup_2810fe01649007129d212705e3fc6e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1be4134d8c7560db23986fc7c2f5b9d = $(`<div id="html_a1be4134d8c7560db23986fc7c2f5b9d" style="width: 100.0%; height: 100.0%;">New York City</div>`)[0];
+                popup_2810fe01649007129d212705e3fc6e88.setContent(html_a1be4134d8c7560db23986fc7c2f5b9d);
+            
+        
+
+        marker_8264f26a218edf9bd9da95bdf387f279.bindPopup(popup_2810fe01649007129d212705e3fc6e88)
+        ;
+
+        
+    
+    
+            var marker_3f8f358cecbe0fc66fa7b701ac0f9118 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_a8e96b465b5a6938486616f52c4ba516);
+        
+    
+            var icon_3501b738d13e079f646fd3960d2eb2a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f8f358cecbe0fc66fa7b701ac0f9118.setIcon(icon_3501b738d13e079f646fd3960d2eb2a4);
+        
+    
+        var popup_c52de38b29f3df3f9750b3f2a78ba72c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53e5b064a7056b2a22c00a96f3a18448 = $(`<div id="html_53e5b064a7056b2a22c00a96f3a18448" style="width: 100.0%; height: 100.0%;">Traffic Halt</div>`)[0];
+                popup_c52de38b29f3df3f9750b3f2a78ba72c.setContent(html_53e5b064a7056b2a22c00a96f3a18448);
+            
+        
+
+        marker_3f8f358cecbe0fc66fa7b701ac0f9118.bindPopup(popup_c52de38b29f3df3f9750b3f2a78ba72c)
+        ;
+
+        
+    
+    
+            var marker_367f73b1ddeb186d5bd308d52d7492c0 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_a8e96b465b5a6938486616f52c4ba516);
+        
+    
+            var icon_8470b2075d43e7fc616f500c552d554c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_367f73b1ddeb186d5bd308d52d7492c0.setIcon(icon_8470b2075d43e7fc616f500c552d554c);
+        
+    
+        var popup_3e0600fc0964a2a1a13f610eb69d0eaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_907d70343fb10dfb1c517ed5f3d7e0af = $(`<div id="html_907d70343fb10dfb1c517ed5f3d7e0af" style="width: 100.0%; height: 100.0%;">Accident</div>`)[0];
+                popup_3e0600fc0964a2a1a13f610eb69d0eaa.setContent(html_907d70343fb10dfb1c517ed5f3d7e0af);
+            
+        
+
+        marker_367f73b1ddeb186d5bd308d52d7492c0.bindPopup(popup_3e0600fc0964a2a1a13f610eb69d0eaa)
+        ;
+
+        
+    
+</script>
+</html>
